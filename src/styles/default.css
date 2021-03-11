@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+/* GENERAL */
+.default-background-color-1 {
+    background-color: lightslategray;
+}
+
+.default-background-color-2 {
+    background-color: white;
+}
+
+.default-text-color-1 {
+    color: lightslategray;
+}
+
+.default-text-color-2 {
+    color: white;
+}
+
+.default-border-1 {
+    border: 2px solid lightslategray;
+}
+
+.default-border-2 {
+    border: 1px solid black;
+}
+
+body {
+    min-width: 500px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px auto;
+    max-width: 500px;
+    min-height: 700px;
+    border-radius: 10px;
+    padding: 1px 1px;
+    position: relative;
+}
+
+.main {
+    margin-bottom: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightslategray;
+    padding: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px 25px;
+    height: 70px;
+    border: 1px solid black;
+}
+
+.navbar p {
+    font-size: 40px;
+    font-weight: bolder;
+    color: white;
+    user-select: none;
+}
+
+.button-start {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    /*border: 1px solid black;*/
+}
+
+.button-start:hover {
+    height: 52px;
+    width: 52px;
+    border: 3px solid greenyellow;
+}
+
+/* BUTTON */
+.button {
+    display: flex;
+    padding: 5px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: white;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    transform: scale(1.05, 1.05);
+    border: 2px solid greenyellow;
+}
+
+.button p {
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+    color: lightslategray;
+}
+
+.start-menu{
+    background-color: lightslategray;
+    width: 120px;
+    top: 75px;
+    padding: 10px;
+    border: 1px solid black;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+}
+
+.start-menu p {
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 2px;
+    user-select: none;
+}
+
+.start-menu p:hover {
+    font-size: 22px;
+    border-bottom: 2px solid greenyellow;
+    border-bottom-right-radius: 10px;
+}
+
+/* WARES */
+.wares-container {
+    margin-top: 10px;  
+    padding: 4px;
+    border: 2px solid lightslategray;
+}
+
+.wares-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px;
+    margin-bottom: 10px;
+    background-color: lightslategray;
+    border: 1px solid black;
+}
+
+.wares-toolbar-btn-gourp {
+    margin-left: auto;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.wares-toolbar input {
+    font-size: 20px;
+}
+
+.wares-toolbar input:hover {
+    border: 2px solid greenyellow;
+}
+
+.wares-list {
+    margin-top: 2px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 500px;
+}
+
+/* WARE FORM */
+.add-ware-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+
+}
+
+.add-ware-form input {
+    font-size: 30px;
+    margin: 20px;
+    padding: 5px;
+}
+
+.add-ware-form label {
+    font-size: 30px;
+    padding: 5px;
+}
+
+/* WARE */
+.ware-container{
+    margin: 4px;
+}
+
+.ware-body {
+    padding: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.ware-body:hover {
+    border-bottom: 2px solid greenyellow;
+}
+
+.ware-toolbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2px;
+}
+
+.ware-toolbar input {
+    max-width: 20%;
+    margin-left: 5px;
+}
+
+.ware-toolbar input:hover {
+    border: 2px solid greenyellow;
+}
+
+/* ORDERS */
+.orders-container {
+    margin-top: 10px;  
+    padding: 4px;
+    border: 2px solid lightslategray;
+}
+
+.orders-list {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 500px;
+}
+
+/* ORDER FORM */
+.add-order-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.add-order-form input{
+    font-size: 30px;
+    margin: 20px;
+    padding: 5px;
+}
+
+/* ORDER */
+.order-container {
+    margin: 4px 6px;
+}
+.order-body {
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.order-body:hover {
+    border-bottom: 2px solid greenyellow;
+}
+
+/* ORDER DETAILS */
+.order-details-container {
+    height: 550px;
+}
+
+.order-details-add-order-container {
+    width: 250px;
+    max-width: 250px;
+    height: 550px;
+    max-height: 550px;
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+}
+
+.order-details-add-order-list {
+    max-height: 510px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.order-details-wares-container {
+    border: 2px solid lightslategray;
+    padding: 5px;
+}
+
+.order-details-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2px 5px;
+    color: lightslategray;
+}
+
+.order-details-header-left {
+    margin: 10px;
+}
+
+.order-details-header-right {
+    background-color: white;
+    margin-left: auto;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    padding: 2px 20px;
+    width: 80%;
+}
+
+.order-details-description-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+}
+
+.order-details-description-title {
+    margin-left: 15px;
+}
+
+.order-details-description {
+    padding: 2px 5px;
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.order-details-wares-list {
+    border: 2px solid lightslategray;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 280px;
+    max-height: 280px;
+}
+
+/* TOOLBAR */
+
+.toolbar-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 5px;
+
+}
+
+.toolbar-searchbar {
+    font-size: large;
+    max-width: 60%;
+}
+
+.toolbar-searchbar:hover{
+    border: 2px solid greenyellow;
+}
+
+.toolbar-btn-group {
+    margin-left: auto;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
